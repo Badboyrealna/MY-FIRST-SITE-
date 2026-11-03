@@ -2,21 +2,51 @@
 <style>
   body {
     font-family: Arial, sans-serif;
-    background-color: #000000;
-    color: white;
+    margin: 0;
+    min-height: 100vh;
+    background-color: #1a1033;
+    background-image:
+      radial-gradient(circle at 50% 115%, rgba(255, 179, 71, 0.45) 0%, rgba(255, 120, 90, 0.18) 30%, transparent 60%),
+      linear-gradient(180deg, #0f0c29 0%, #302b63 55%, #5b3a78 100%);
+    background-attachment: fixed;
+    color: #f5f1ff;
     text-align: center;
     padding-top: 80px;
+    box-sizing: border-box;
+  }
+  h1 {
+    color: #ffd27a;
+    text-shadow: 0 2px 18px rgba(255, 190, 90, 0.35);
+  }
+  h2 {
+    color: #ffd27a;
+    text-transform: capitalize;
+    margin-top: 48px;
+  }
+  p {
+    color: #d9d2f0;
+    line-height: 1.6;
+  }
+  #message {
+    max-width: 640px;
+    margin: 28px auto 0;
+    padding: 0 20px;
+    color: #e3c8ff !important;
   }
   button {
-    background-color: gold;
+    background-color: #ffc94d;
+    color: #2a1a4a;
     border: none;
     padding: 12px 24px;
     font-size: 16px;
     border-radius: 8px;
     cursor: pointer;
-}
+    box-shadow: 0 6px 20px rgba(255, 180, 60, 0.3);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
   button:hover {
-    background-color: darkorange;
+    background-color: #ff9f43;
+    transform: translateY(-2px);
   }
 </style>
 <html>
